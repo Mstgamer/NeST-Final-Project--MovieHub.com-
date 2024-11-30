@@ -1,0 +1,66 @@
+/* Ensure the html and body elements cover the full height */
+html, body {
+  height: 100%; /* Set height to 100% to cover the entire viewport */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+
+/* Set the background image on the body */
+body {
+  background-image: url('/hmimg.jpg');
+  background-size: cover; /* Make sure the image covers the whole viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: stretch; /* Ensure full width of the body */
+  min-height: 100vh; /* Ensure it covers at least the viewport height */
+}
+
+/* Container for page layout */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px; /* Optional max-width for container */
+  padding: 20px;
+  position: relative; /* To manage content positioning */
+}
+
+/* Style for the MovieHub header */
+.moviehub {
+  font-family: 'Satisfy', cursive;
+  font-size: 100px;
+}
+
+.movie {
+  color: white;
+}
+
+.hub {
+  background-color: orange;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* Style for the text-box around the paragraph */
+.text-box {
+  background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+  padding: 20px;
+  border-radius: 15px; /* Curved corners */
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Ensure links have no text decoration */
+a {
+  color: rgb(0, 0, 1);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+#hed2 {
+  color: white;
+}

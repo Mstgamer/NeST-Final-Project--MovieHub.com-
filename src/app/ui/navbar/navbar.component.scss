@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: rgb(0, 191, 255); 
+  }
+  
+
+nav {
+    background: rgb(7, 4, 26);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+nav ul li:not(.login-btn) {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: hsl(0, 0%, 42%);
+    border-radius: 50px;
+}
+
+
+nav ul li.login-btn {
+    margin-left: auto; 
+}
+
+nav ul li.login-btn a {
+    padding: 0.5rem 1rem;
+}
+
+
+nav ul li.login-btn a:hover {
+    background-color: white; 
+    color: rgb(12, 11, 23);
+    border-color: white;
+    text-decoration: none;
+}
+a {
+    color: rgb(0, 0, 1);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+.moviehub {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+  }
+  
+  .movie {
+    color: white;
+  }
+  
+  .hub {
+    background-color: orange;
+    color: rgb(0, 0, 0);
+    border-radius: 10px; /* This makes the corners rounded */
+    padding: 5px 10px; /* Optional: adds some padding inside the element */
+  }
+  
+  

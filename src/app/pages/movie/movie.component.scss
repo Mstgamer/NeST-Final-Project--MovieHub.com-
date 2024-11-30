@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 200ms ease-out;
+}
+
+html, body {
+    height: 100%; /* Ensure body takes full height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/mvbg.jpg');
+    background-size: cover; /* Ensure background image covers the viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Keep the background fixed on scroll */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjust this if you need to change the vertical alignment */
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it covers the full height */
+}
+
+.container {
+    margin-top: 10%;
+    padding-left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%; /* Ensures the box takes up full width */
+}
+
+.text-container h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 80px;
+    color: black;
+}
+
+.text-container p {
+    color: black;
+    font-size: 20px;
+}
+
+button {
+    appearance: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    isolation: isolate;
+}
+
+.button {
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 60px;
+    border-radius: 9999rem;
+    background: white;
+    box-shadow: 0 12px 24px 0 color-mix(in oklab, black, transparent 90%);
+    position: relative;
+    overflow: hidden;
+}
+
+button > span {
+    color: transparent;
+    background: linear-gradient(90deg, var(--pink), var(--trans-red), var(--yellow));
+    background-clip: text;
+}
+
+button:hover {
+    box-shadow: 0 0 0 0 color-mix(in oklab, black, transparent 90%);
+    transform: scale(1.2);
+}
+
+button > span {
+    color: white;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
